@@ -1,0 +1,17 @@
+.DS_Store
+*.o
+build
+buildResults
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.tm_build_errors
+*.perspectivev3
+xcuserdata
+.idea
+buildScript
+YandexMobileMetrikaSampleApp/YandexMobileMetrikaSampleApp/YandexMobileMetrika/*
+intermediates
+External/
+Pods/
+podfile\.lock

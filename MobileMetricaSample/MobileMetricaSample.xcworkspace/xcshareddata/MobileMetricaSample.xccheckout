@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>86E09314-9EB7-4803-B092-1D8CB5D34992</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MobileMetricaSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E75E14E7-CE9D-48CB-8A14-39970FC95837</key>
+		<string>ssh://stash.desktop.dev.yandex.net/ml/mobile-metrica-sample-with-prebuilt-pod.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MobileMetricaSample/MobileMetricaSample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E75E14E7-CE9D-48CB-8A14-39970FC95837</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://stash.desktop.dev.yandex.net/ml/mobile-metrica-sample-with-prebuilt-pod.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E75E14E7-CE9D-48CB-8A14-39970FC95837</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E75E14E7-CE9D-48CB-8A14-39970FC95837</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mobile-metrica-sample-with-prebuilt-pod</string>
+		</dict>
+	</array>
+</dict>
+</plist>
