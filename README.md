@@ -15,10 +15,11 @@ Quick start
 3.  Go to cloned repository and install dependancies:
     pod install
 
-    Notice: YandexMobileMetrica pod spec isn't currently placed at 'https://github.com/CocoaPods/Specs/', but as soon as out pull request will be accepted it would be available from there.
-    Notice: KSCrash pod spec is not at 'https://github.com/CocoaPods/Specs/', so currently we specified direct url to its podspec in pod file.
-
-
 4. Open project workspace MobileMetricaSample.xcworkspace.
 
 5. Build and run MobileMetricaSample target.
+
+
+Notice:
+1. YandexMobileMetrica pod spec isn't currently placed at 'https://github.com/CocoaPods/Specs/', but as soon as out pull request will be accepted it would be available from there.
+2. KSCrash pod spec is not at 'https://github.com/CocoaPods/Specs/', so currently we specified direct url to its podspec in pod file.

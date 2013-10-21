@@ -5,36 +5,48 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>86E09314-9EB7-4803-B092-1D8CB5D34992</string>
+	<string>CFB5984A-C010-4547-83C7-BD031EBAA8BA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MobileMetricaSample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E75E14E7-CE9D-48CB-8A14-39970FC95837</key>
-		<string>ssh://stash.desktop.dev.yandex.net/ml/mobile-metrica-sample-with-prebuilt-pod.git</string>
+		<key>4D1B2AFF-6D76-41D4-8591-E7A910E3D811</key>
+		<string>ssh://github.com/yandexmobile/metrica-sample-ios.git</string>
+		<key>AEAFBBDE-0C28-4320-87F1-8D1C0BAA1A07</key>
+		<string>ssh://github.com/yandexmobile/metrica-sample-android.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MobileMetricaSample/MobileMetricaSample.xcworkspace</string>
+	<string>metrica-sample-ios/MobileMetricaSample.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E75E14E7-CE9D-48CB-8A14-39970FC95837</key>
+		<key>4D1B2AFF-6D76-41D4-8591-E7A910E3D811</key>
+		<string>..</string>
+		<key>AEAFBBDE-0C28-4320-87F1-8D1C0BAA1A07</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://stash.desktop.dev.yandex.net/ml/mobile-metrica-sample-with-prebuilt-pod.git</string>
+	<string>ssh://github.com/yandexmobile/metrica-sample-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E75E14E7-CE9D-48CB-8A14-39970FC95837</string>
+	<string>AEAFBBDE-0C28-4320-87F1-8D1C0BAA1A07</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E75E14E7-CE9D-48CB-8A14-39970FC95837</string>
+			<string>AEAFBBDE-0C28-4320-87F1-8D1C0BAA1A07</string>
 			<key>IDESourceControlWCCName</key>
-			<string>mobile-metrica-sample-with-prebuilt-pod</string>
+			<string>github_yandexmobile</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4D1B2AFF-6D76-41D4-8591-E7A910E3D811</string>
+			<key>IDESourceControlWCCName</key>
+			<string>metrica-sample-ios</string>
 		</dict>
 	</array>
 </dict>
