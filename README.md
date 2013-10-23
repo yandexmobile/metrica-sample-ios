@@ -1,25 +1,29 @@
-There is a sample application to demonstrate basic usage of Yandex.Metrica for Apps.
+## Yandex.Metrica for Apps sample project
+Sample application to demonstrate basic usage of Yandex.Metrica for Apps
 
-EULA could be found at:
-http://legal.yandex.com/metrica_termsofuse/
+## License
+License agreement on use of Yandex.Metrica for Apps SDK is available at: [EULA site] [LICENSE] 
 
-Documentation could be found at:
-http://api.yandex.com/metrica-mobile-sdk/
+## Documentation
+Documentation could be found at: [metrica officail site] [DOCUMENTATION]
 
-Quick start
-1. Install CocoaPods (http://cocoapods.org/) to manage project dependancies, if you haven't done it yet.
+## Quick start
+
+1. Install [CocoaPods] [CocoaPods] to manage project dependencies, if you haven't done it yet.
 
 2. Clone repository:
-    git clone https://github.com/yandexmobile/metrica-sample-ios
+    `git clone https://github.com/yandexmobile/metrica-sample-ios`
 
-3.  Go to cloned repository and install dependancies:
-    pod install
+3.  Go to cloned repository and install dependencies:
+    `pod install`
 
-4. Open project workspace MobileMetricaSample.xcworkspace.
+4. Open project workspace `MobileMetricaSample.xcworkspace`.
 
-5. Build and run MobileMetricaSample target.
+5. Build and run `MobileMetricaSample` target.
 
 
-Notice:
-1. YandexMobileMetrica pod spec isn't currently placed at 'https://github.com/CocoaPods/Specs/', but as soon as out pull request will be accepted it would be available from there.
-2. KSCrash pod spec is not at 'https://github.com/CocoaPods/Specs/', so currently we specified direct url to its podspec in pod file.
+[CocoaPods]: http://cocoapods.org/ "CocoaPods site"
+[CocoaPodSpecs]:https://github.com/CocoaPods/Specs/ "Official repository of cocoa pod specs"
+[LICENSE]: http://legal.yandex.ru/metrica_termsofuse/ "Yandex.Metrica agreement"
+[DOCUMENTATION]: http://api.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/concepts/about.xml "Yandex.Metrica for Apps documentation page"
+[REGISTER]: http://appmetrica.yandex.com/ "Yandex.Metrica for Apps homepage"
