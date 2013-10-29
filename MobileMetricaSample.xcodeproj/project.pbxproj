@@ -10,7 +10,6 @@
 		0305DAFE181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */; };
 		0305DB011811916100E392ED /* MMSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0305DAFF1811916100E392ED /* MMSViewController.xib */; };
 		033FC8B7181010660006F2C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8B6181010660006F2C6 /* Foundation.framework */; };
-		033FC8B9181010660006F2C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8B8181010660006F2C6 /* CoreGraphics.framework */; };
 		033FC8BB181010660006F2C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8BA181010660006F2C6 /* UIKit.framework */; };
 		033FC8C1181010660006F2C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033FC8BF181010660006F2C6 /* InfoPlist.strings */; };
 		033FC8C3181010660006F2C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 033FC8C2181010660006F2C6 /* main.m */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033FC8B9181010660006F2C6 /* CoreGraphics.framework in Frameworks */,
 				033FC8BB181010660006F2C6 /* UIKit.framework in Frameworks */,
 				033FC8B7181010660006F2C6 /* Foundation.framework in Frameworks */,
 				8A28F1F1B3934E389C66C662 /* libPods-MobileMetricaSample.a in Frameworks */,
