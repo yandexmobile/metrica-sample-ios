@@ -59,7 +59,7 @@
     NSString *name = [NSString stringWithFormat:@"ERROR %d", counter];
 
     NSError *error = nil;
-    [YMMCounter reportError:name exception:nil failure:nil];
+    [YMMCounter reportError:name exception:nil failure:&error];
 
     if (error) {
         NSLog(@"error: %@", [error localizedDescription]);
@@ -80,7 +80,7 @@
         [testException raise];
     }
     @catch (NSException *exception) {
-        [YMMCounter reportError:name exception:exception failure:nil];
+        [YMMCounter reportError:name exception:exception failure:&error];
     }
     @finally {
         testException = nil;
