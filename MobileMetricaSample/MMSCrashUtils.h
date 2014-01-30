@@ -13,8 +13,29 @@
 
 @interface MMSCrashUtils : NSObject
 
-+ (void)randomCrash;
++ (void)deadbeef;
++ (void)releaseNULL;
 + (void)dereferenceNullPointer;
 + (void)useCorruptObject;
++ (void)indexOutOfBounds;
++ (void)raiseException;
++ (void)raiseExceptionInDefaultQueue;
++ (void)raiseExceptionInCustomQueue;
++ (void)objcHandlerCalledFromARunLoop;
+
+//Following crashing methods were borrowed from KSCrash
+//https://github.com/kstenerud/KSCrash/blob/master/Source/Common-Examples/Crasher.mm
++ (void)throwUncaughtNSException;
++ (void)doAbort;
++ (void)dereferenceBadPointer;
++ (void)spinRunloop;
++ (void)causeStackOverflow;
++ (void)doIllegalInstruction;
++ (void)accessDeallocatedObject;
++ (void)accessDeallocatedPtrProxy;
++ (void)zombieNSException;
++ (void)corruptMemory;
++ (void)deadlock;
++ (void)throwUncaughtCPPException;
 
 @end

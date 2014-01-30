@@ -12,8 +12,8 @@
 #import <YandexMobileMetrica/YandexMobileMetrica.h>
 
 #import "MMSAppDelegate.h"
-#import "MMSViewController.h"
-#import "MMSCrashUtils.h"
+#import "MMSRootControllerProvider.h"
+#import "asl.h"
 
 @interface MMSAppDelegate () <CLLocationManagerDelegate>
 
@@ -26,7 +26,7 @@
 + (void)initialize
 {
     if ([self class] == [MMSAppDelegate class]) {
-        // TODO: set appropriate application key provided by Yandex Metrica/
+        // TODO: set appropriate application key provided by Yandex.Metrica
         [YMMCounter startWithAPIKey:1111];
     }
 }
@@ -34,23 +34,31 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[MMSViewController alloc] initWithNibName:@"MMSViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UIViewController *rootController = [MMSRootControllerProvider rootController];
+    self.window.rootViewController = rootController;
+
     [self.window makeKeyAndVisible];
 
     //  uncomment this code to test crash handling on application launch.
-//    [MMSCrashUtils randomCrash];
-
+    //[MMSCrashUtils randomCrash];
+    //manual log level setting for whole library
+    [YMMCounter setLogLevel:ASL_LEVEL_DEBUG];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self startLocationUpdates];
     });
-    
+
     return YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     [self shutdownLocationUpdates];
+    __block UIBackgroundTaskIdentifier taskId = UIBackgroundTaskInvalid;
+    taskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        NSLog(@"Background event expired: %llu", (unsigned long long int)taskId);
+        [[UIApplication sharedApplication] endBackgroundTask:taskId];
+        taskId = UIBackgroundTaskInvalid;
+    }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

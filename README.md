@@ -5,7 +5,10 @@ Sample application to demonstrate basic usage of Yandex.Metrica for Apps
 License agreement on use of Yandex.Metrica for Apps SDK is available at: [EULA site] [LICENSE] 
 
 ## Documentation
-Documentation could be found at: [metrica officail site] [DOCUMENTATION]
+Documentation could be found at: [metrica official site] [DOCUMENTATION]
+
+## Metrica SDK
+Information related to Yandex.Metrica for Apps SDK itself is available at: [Metrica on Github] [MetricaSDKGithub]
 
 ## Quick start
 
@@ -23,7 +26,7 @@ Documentation could be found at: [metrica officail site] [DOCUMENTATION]
 
 
 [CocoaPods]: http://cocoapods.org/ "CocoaPods site"
-[CocoaPodSpecs]:https://github.com/CocoaPods/Specs/ "Official repository of cocoa pod specs"
 [LICENSE]: http://legal.yandex.ru/metrica_termsofuse/ "Yandex.Metrica agreement"
 [DOCUMENTATION]: http://api.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/concepts/about.xml "Yandex.Metrica for Apps documentation page"
 [REGISTER]: http://appmetrica.yandex.com/ "Yandex.Metrica for Apps homepage"
+[MetricaSDKGithub]: https://github.com/yandexmobile/metrica-sdk-ios "Yandex.Metrica for Apps SDK"
