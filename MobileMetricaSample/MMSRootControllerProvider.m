@@ -41,13 +41,13 @@ static CGFloat const kMMSNavBarBrightness = .75f;
     navController.navigationBar.translucent = NO;
 
     UIColor *tintColor = [UIColor colorWithWhite:kMMSNavBarBrightness alpha:1.f];
-#ifdef __IPHONE_7_0
     if ([navController.navigationBar respondsToSelector:@selector(setBarTintColor:)]) {
+#ifdef __IPHONE_7_0
         navController.navigationBar.barTintColor = tintColor;
-    }
-    else
 #endif
-    {
+
+    }
+    else {
         navController.navigationBar.tintColor = tintColor;
     }
 
@@ -63,7 +63,7 @@ static CGFloat const kMMSNavBarBrightness = .75f;
                            [MMSListItem listItemWithBlock:[[self class] showCrashesBlock]
                                                     title:@"Crashes"
                                                disclosing:YES]];
-    
+
     return structure;
 }
 

@@ -44,7 +44,7 @@ public:
 {
     __unsafe_unretained id _ref;
 }
-@property(nonatomic, readwrite, unsafe_unretained) id ref;
+@property(nonatomic, readwrite, assign) id ref;
 
 @end
 
@@ -72,13 +72,17 @@ public:
 
 + (void)releaseNULL
 {
+#ifndef __clang_analyzer__
     CFRelease(NULL);
+#endif
 }
 
 + (void)dereferenceNullPointer
 {
+#ifndef __clang_analyzer__
     int *g_crasher_null_ptr = NULL;
     *g_crasher_null_ptr = 1;
+#endif
 }
 
 + (void)useCorruptObject
@@ -135,14 +139,13 @@ public:
 + (void)objcHandlerCalledFromARunLoop
 {
     //http://stackoverflow.com/questions/13777446/ios-how-to-get-stack-trace-of-an-unhandled-stdexception
-//    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+    //    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
     //without dispatching, stack trace displayed by Organizer would be incorrect.
-        stdThrowingCode();
-//    });
+    stdThrowingCode();
+    //    });
 }
 
-//Following crashing methods were borrowed from KSCrash
-//https://github.com/kstenerud/KSCrash/blob/master/Source/Common-Examples/Crasher.mm
+//Following crashing methods were borrowed from KSCrash https://github.com/kstenerud/KSCrash/blob/master/Source/Common-Examples/Crasher.mm
 
 + (void)throwUncaughtNSException
 {
@@ -163,12 +166,14 @@ public:
 
 + (void)spinRunloop
 {
+#ifndef __clang_analyzer__
     // From http://landonf.bikemonkey.org/2011/09/14
     int *g_crasher_null_ptr = NULL;
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"ERROR: Run loop should be dead but isn't!");
     });
     *g_crasher_null_ptr = 1;
+#endif
 }
 
 + (void)causeStackOverflow
@@ -253,4 +258,3 @@ public:
 }
 
 @end
-

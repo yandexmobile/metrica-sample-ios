@@ -14,6 +14,8 @@
 #import "MMSAppDelegate.h"
 #import "MMSRootControllerProvider.h"
 #import "asl.h"
+#import <YandexMobileMetrica/YandexMobileMetrica.h>
+#import <AdSupport/AdSupport.h>
 
 @interface MMSAppDelegate () <CLLocationManagerDelegate>
 
@@ -26,8 +28,13 @@
 + (void)initialize
 {
     if ([self class] == [MMSAppDelegate class]) {
+        //Attention! setIDFA should be called only in applications that display ads
+        //All other apps will be rejected from AppStore.
+        [self setIDFA];
         // TODO: set appropriate application key provided by Yandex.Metrica
         [YMMCounter startWithAPIKey:1111];
+        //manual log level setting for whole library
+        //[YMMCounter setLogLevel:ASL_LEVEL_DEBUG];
     }
 }
 
@@ -38,11 +45,6 @@
     self.window.rootViewController = rootController;
 
     [self.window makeKeyAndVisible];
-
-    //  uncomment this code to test crash handling on application launch.
-    //[MMSCrashUtils randomCrash];
-    //manual log level setting for whole library
-    [YMMCounter setLogLevel:ASL_LEVEL_DEBUG];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self startLocationUpdates];
     });
@@ -88,6 +90,21 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
     [YMMCounter setLocation:newLocation];
+}
+
+#pragma mark utils
+//Attention!
+//Application should display ads to be allowed to use AdSupport.framework
++ (void)setIDFA
+{
+    Class managerClass = [ASIdentifierManager class];
+    if (managerClass != Nil) {
+        id manager = [managerClass sharedManager];
+        if ([manager isAdvertisingTrackingEnabled]) {
+            NSUUID *value = [manager advertisingIdentifier];
+            [YMMCounter setIDFA:[value UUIDString]];
+        }
+    }
 }
 
 @end

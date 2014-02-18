@@ -46,6 +46,7 @@
 		033FC8D8181010660006F2C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMSCrashUtils.mm; sourceTree = "<group>"; };
 		033FC8F01810169B0006F2C6 /* MMSCrashUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCrashUtils.h; sourceTree = "<group>"; };
+		03871AE918B2692B00CE9E18 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFF91811814714E00F048DE /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		7FFF91821814714E00F048DE /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		033FC8B5181010660006F2C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03871AE918B2692B00CE9E18 /* AdSupport.framework */,
 				033FC8B6181010660006F2C6 /* Foundation.framework */,
 				033FC8B8181010660006F2C6 /* CoreGraphics.framework */,
 				033FC8BA181010660006F2C6 /* UIKit.framework */,
@@ -373,11 +375,14 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMetricaSample/MobileMetricaSample-Prefix.pch";
 				INFOPLIST_FILE = "MobileMetricaSample/MobileMetricaSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,11 +395,14 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMetricaSample/MobileMetricaSample-Prefix.pch";
 				INFOPLIST_FILE = "MobileMetricaSample/MobileMetricaSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
