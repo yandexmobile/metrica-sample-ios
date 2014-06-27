@@ -7,6 +7,7 @@ Documentation could be found at:
 http://api.yandex.com/metrica-mobile-sdk/
 
 Quick start
+
 1. Install CocoaPods (http://cocoapods.org/) to manage project dependencies, if you haven't done it yet.
 
 2. Clone repository:
