@@ -1,5 +1,5 @@
 /*
- *  MMSAppDelegate.h
+ *  MMSEventWithCustomParametersController.h
  *
  * This file is a part of the Yandex.Metrica for Apps.
  *
@@ -11,8 +11,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMSAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (nonatomic, strong) UIWindow *window;
+@interface MMSEventWithCustomParametersController : UIViewController
 
 @end

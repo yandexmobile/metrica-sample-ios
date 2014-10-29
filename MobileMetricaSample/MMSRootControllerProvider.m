@@ -42,10 +42,7 @@ static CGFloat const kMMSNavBarBrightness = .75f;
 
     UIColor *tintColor = [UIColor colorWithWhite:kMMSNavBarBrightness alpha:1.f];
     if ([navController.navigationBar respondsToSelector:@selector(setBarTintColor:)]) {
-#ifdef __IPHONE_7_0
         navController.navigationBar.barTintColor = tintColor;
-#endif
-
     }
     else {
         navController.navigationBar.tintColor = tintColor;

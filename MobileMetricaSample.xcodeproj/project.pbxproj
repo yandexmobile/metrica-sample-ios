@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0305DAFE181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */; };
+		030299AE19FFAD3700751CBA /* MMSEventWithCustomParametersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */; };
+		030299B119FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */; };
+		0305DAFE181190EB00E392ED /* (null) in Resources */ = {isa = PBXBuildFile; };
 		033FC8B7181010660006F2C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8B6181010660006F2C6 /* Foundation.framework */; };
 		033FC8BB181010660006F2C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8BA181010660006F2C6 /* UIKit.framework */; };
 		033FC8C1181010660006F2C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033FC8BF181010660006F2C6 /* InfoPlist.strings */; };
@@ -31,7 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.xcconfig"; path = "Pods/Pods-MobileMetricaSample.xcconfig"; sourceTree = "<group>"; };
+		030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSEventWithCustomParametersController.m; sourceTree = "<group>"; };
+		030299AD19FFAD3700751CBA /* MMSEventWithCustomParametersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSEventWithCustomParametersController.h; sourceTree = "<group>"; };
+		030299B019FFB9DF00751CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMSEventWithCustomParametersController.xib; sourceTree = "<group>"; };
 		033FC8B3181010660006F2C6 /* MobileMetricaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMetricaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		033FC8B6181010660006F2C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		033FC8B8181010660006F2C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,6 +51,7 @@
 		033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMSCrashUtils.mm; sourceTree = "<group>"; };
 		033FC8F01810169B0006F2C6 /* MMSCrashUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCrashUtils.h; sourceTree = "<group>"; };
 		03871AE918B2692B00CE9E18 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
 		4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFF91811814714E00F048DE /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		7FFF91821814714E00F048DE /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		7FFF91851814714E00F048DE /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		7FFF91861814714E00F048DE /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		7FFF91871814714E00F048DE /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
 		DC7C058D189821630098F045 /* MMSListItemsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListItemsProvider.m; sourceTree = "<group>"; };
 		DC7C058E189821630098F045 /* MMSListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListViewController.m; sourceTree = "<group>"; };
 		DC7C058F189821630098F045 /* MMSReportingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSReportingUtils.m; sourceTree = "<group>"; };
@@ -84,10 +90,10 @@
 		033FC8AA181010660006F2C6 = {
 			isa = PBXGroup;
 			children = (
-				0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */,
 				033FC8BC181010660006F2C6 /* MobileMetricaSample */,
 				033FC8B5181010660006F2C6 /* Frameworks */,
 				033FC8B4181010660006F2C6 /* Products */,
+				F4931352F8968228472F3B97 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +121,8 @@
 		033FC8BC181010660006F2C6 /* MobileMetricaSample */ = {
 			isa = PBXGroup;
 			children = (
+				030299AD19FFAD3700751CBA /* MMSEventWithCustomParametersController.h */,
+				030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */,
 				DC7C0592189821630098F045 /* MMSListItemsProvider.h */,
 				DC7C058D189821630098F045 /* MMSListItemsProvider.m */,
 				DC7C0593189821630098F045 /* MMSListViewController.h */,
@@ -138,6 +146,7 @@
 		033FC8BD181010660006F2C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */,
 				7FFF91801814714E00F048DE /* icons */,
 				033FC8BE181010660006F2C6 /* MobileMetricaSample-Info.plist */,
 				033FC8BF181010660006F2C6 /* InfoPlist.strings */,
@@ -159,6 +168,15 @@
 				7FFF91871814714E00F048DE /* 72.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		F4931352F8968228472F3B97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */,
+				AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +210,11 @@
 				CLASSPREFIX = MMS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Yandex;
+				TargetAttributes = {
+					033FC8B2181010660006F2C6 = {
+						DevelopmentTeam = EK7Z26L6D4;
+					};
+				};
 			};
 			buildConfigurationList = 033FC8AE181010660006F2C6 /* Build configuration list for PBXProject "MobileMetricaSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -217,11 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFF918D1814714E00F048DE /* 58.png in Resources */,
+				030299B119FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib in Resources */,
 				7FFF91891814714E00F048DE /* 29.png in Resources */,
 				7FFF918E1814714E00F048DE /* 72.png in Resources */,
 				7FFF91881814714E00F048DE /* 114.png in Resources */,
 				7FFF918B1814714E00F048DE /* 512.png in Resources */,
-				0305DAFE181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig in Resources */,
+				0305DAFE181190EB00E392ED /* (null) in Resources */,
 				033FC8D2181010660006F2C6 /* Images.xcassets in Resources */,
 				7FFF918C1814714E00F048DE /* 57.png in Resources */,
 				7FFF918A1814714E00F048DE /* 50.png in Resources */,
@@ -244,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MobileMetricaSample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFB4EFEC34E34B899D23F0E9 /* Check Pods Manifest.lock */ = {
@@ -277,12 +301,21 @@
 				DC7C059A189821630098F045 /* MMSListItem.m in Sources */,
 				DC7C059B189821630098F045 /* MMSRootControllerProvider.m in Sources */,
 				DC7C0597189821630098F045 /* MMSListItemsProvider.m in Sources */,
+				030299AE19FFAD3700751CBA /* MMSEventWithCustomParametersController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030299B019FFB9DF00751CBA /* en */,
+			);
+			name = MMSEventWithCustomParametersController.xib;
+			sourceTree = "<group>";
+		};
 		033FC8BF181010660006F2C6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -370,17 +403,17 @@
 		};
 		033FC8E9181010660006F2C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */;
+			baseConfigurationReference = 4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMetricaSample/MobileMetricaSample-Prefix.pch";
 				INFOPLIST_FILE = "MobileMetricaSample/MobileMetricaSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,17 +423,17 @@
 		};
 		033FC8EA181010660006F2C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0305DAFD181190EB00E392ED /* Pods-MobileMetricaSample.xcconfig */;
+			baseConfigurationReference = AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMetricaSample/MobileMetricaSample-Prefix.pch";
 				INFOPLIST_FILE = "MobileMetricaSample/MobileMetricaSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

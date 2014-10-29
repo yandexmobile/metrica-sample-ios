@@ -15,7 +15,9 @@
 
 + (void)reportEventA;
 + (void)reportEventB;
++ (void)reportEventWithName:(NSString *)name parameters:(NSDictionary *)params;
 + (void)reportError;
 + (void)reportException;
++ (void)forceSendEvents;
 
 @end

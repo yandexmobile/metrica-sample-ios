@@ -14,6 +14,7 @@
 #import "MMSReportingUtils.h"
 #import "MMSListItem.h"
 #import "MMSListViewController.h"
+#import "MMSEventWithCustomParametersController.h"
 
 @implementation MMSListItemsProvider
 
@@ -146,6 +147,11 @@
 {
     static NSArray *reportingItems = nil;
     void (^onceBlock)() = ^{
+        MMSListItemBlock showEventWithCustomParametersController = ^(MMSListViewController *lc) {
+            MMSEventWithCustomParametersController *controller = [[MMSEventWithCustomParametersController alloc] init];
+            controller.navigationItem.title = @"Report Event With Parameters";
+            [lc.navigationController pushViewController:controller animated:YES];
+        };
         reportingItems =
         @[
           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
@@ -166,7 +172,10 @@
           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
               [MMSReportingUtils reportException];
           }
-                                   title:@"Report exception"]
+                                   title:@"Report exception"],
+          [MMSListItem listItemWithBlock:showEventWithCustomParametersController
+                                   title:@"Report Event With Parameters"
+                              disclosing:YES]
           ];
     };
 

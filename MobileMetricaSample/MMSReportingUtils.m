@@ -10,35 +10,35 @@
  */
 
 #import "MMSReportingUtils.h"
-#import <YandexMobileMetrica/YMMCounter.h>
+#import <YandexMobileMetrica/YandexMobileMetrica.h>
 
 @implementation MMSReportingUtils
 
 + (void)reportEventWithName:(NSString *)name
 {
-    NSError * __autoreleasing error = nil;
-    [YMMCounter reportEvent:name failure:&error];
-
-    if (error != nil) {
+    [YMMYandexMetrica reportEvent:name onFailure:^(NSError *error) {
         NSLog(@"error: %@", [error localizedDescription]);
-    }
+    }];
 }
 
 + (void)reportEventWithName:(NSString *)name index:(int)index
 {
     NSString *message = [NSString stringWithFormat:@"EVENT-%@ %d", name, index];
-
     [[self class] reportEventWithName:message];
 }
 
 + (void)reportErrorWithName:(NSString *)name exception:(NSException *)exception
 {
-    NSError * __autoreleasing error = nil;
-    [YMMCounter reportError:name exception:exception failure:&error];
-
-    if (error != nil) {
+    [YMMYandexMetrica reportError:name exception:exception onFailure:^(NSError *error) {
         NSLog(@"error: %@", [error localizedDescription]);
-    }
+    }];
+}
+
++ (void)reportEventWithName:(NSString *)name parameters:(NSDictionary *)params
+{
+    [YMMYandexMetrica reportEvent:name parameters:params onFailure:^(NSError *error) {
+         NSLog(@"error: %@", [error localizedDescription]);
+    }];
 }
 
 + (void)reportEventA
@@ -82,6 +82,11 @@
     @finally {
         testException = nil;
     }
+}
+
++ (void)forceSendEvents
+{
+    [YMMYandexMetrica sendEventsBuffer];
 }
 
 @end
