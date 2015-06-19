@@ -1,5 +1,5 @@
 /*
- *  MMSAppDelegate.h
+ *  MMSDictionaryEditorController.h
  *
  * This file is a part of the Yandex.Metrica for Apps.
  *
@@ -11,8 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MMSDictionaryEditorController : UIViewController
 
-@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, copy) void(^dictionaryHandler)(NSDictionary *dictionary);
+@property (nonatomic, assign) BOOL emptyValuesAllowed;
+@property (nonatomic, copy) NSString *actionTitle;
 
 @end

@@ -3,14 +3,13 @@
  *
  * This file is a part of the Yandex.Metrica for Apps.
  *
- * Version for iOS © 2014 YANDEX
+ * Version for iOS © 2015 YANDEX
  *
  * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://legal.yandex.com/metrica_termsofuse/
  */
 
 #import <YandexMobileMetrica/YandexMobileMetrica.h>
-#import <AdSupport/AdSupport.h>
 #import "MMSAppDelegate.h"
 #import "MMSRootControllerProvider.h"
 #import "asl.h"
