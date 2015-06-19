@@ -6,5 +6,5 @@ platform :ios, :deployment_target => '6.0'
 
 target :MobileMetricaSample do
     xcodeproj 'MobileMetricaSample.xcodeproj' 
-    pod 'YandexMobileMetrica', '1.6.2'
+    pod 'YandexMobileMetrica', :git => 'https://github.com/yandexmobile/metrica-sdk-ios'
 end

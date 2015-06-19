@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030299AE19FFAD3700751CBA /* MMSEventWithCustomParametersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */; };
-		030299B119FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */; };
 		0305DAFE181190EB00E392ED /* (null) in Resources */ = {isa = PBXBuildFile; };
 		033FC8B7181010660006F2C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8B6181010660006F2C6 /* Foundation.framework */; };
 		033FC8BB181010660006F2C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033FC8BA181010660006F2C6 /* UIKit.framework */; };
@@ -30,12 +28,13 @@
 		DC7C0599189821630098F045 /* MMSReportingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058F189821630098F045 /* MMSReportingUtils.m */; };
 		DC7C059A189821630098F045 /* MMSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0591189821630098F045 /* MMSListItem.m */; };
 		DC7C059B189821630098F045 /* MMSRootControllerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0596189821630098F045 /* MMSRootControllerProvider.m */; };
+		F60D89C61B2B0CDB0055DF34 /* MMSKeyValueInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */; };
+		F60D89C91B2B0CE60055DF34 /* MMSDictionaryEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C81B2B0CE60055DF34 /* MMSDictionaryEditorController.m */; };
+		F60D89CC1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D89CA1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib */; };
+		F667A91B1ACF0F1B008BDED4 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F667A91A1ACF0F1B008BDED4 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSEventWithCustomParametersController.m; sourceTree = "<group>"; };
-		030299AD19FFAD3700751CBA /* MMSEventWithCustomParametersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSEventWithCustomParametersController.h; sourceTree = "<group>"; };
-		030299B019FFB9DF00751CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMSEventWithCustomParametersController.xib; sourceTree = "<group>"; };
 		033FC8B3181010660006F2C6 /* MobileMetricaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMetricaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		033FC8B6181010660006F2C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		033FC8B8181010660006F2C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +50,10 @@
 		033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMSCrashUtils.mm; sourceTree = "<group>"; };
 		033FC8F01810169B0006F2C6 /* MMSCrashUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCrashUtils.h; sourceTree = "<group>"; };
 		03871AE918B2692B00CE9E18 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
+		0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
+		219F05D17A70150AB225C014 /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
 		4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7FFF91811814714E00F048DE /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		7FFF91821814714E00F048DE /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
 		7FFF91831814714E00F048DE /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
@@ -60,7 +61,7 @@
 		7FFF91851814714E00F048DE /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		7FFF91861814714E00F048DE /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		7FFF91871814714E00F048DE /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
-		AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
+		82EB9AC9D18431B3D2A93ABD /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7C058D189821630098F045 /* MMSListItemsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListItemsProvider.m; sourceTree = "<group>"; };
 		DC7C058E189821630098F045 /* MMSListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListViewController.m; sourceTree = "<group>"; };
 		DC7C058F189821630098F045 /* MMSReportingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSReportingUtils.m; sourceTree = "<group>"; };
@@ -71,6 +72,12 @@
 		DC7C0594189821630098F045 /* MMSReportingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSReportingUtils.h; sourceTree = "<group>"; };
 		DC7C0595189821630098F045 /* MMSRootControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSRootControllerProvider.h; sourceTree = "<group>"; };
 		DC7C0596189821630098F045 /* MMSRootControllerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSRootControllerProvider.m; sourceTree = "<group>"; };
+		F60D89C41B2B0CDB0055DF34 /* MMSKeyValueInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSKeyValueInputView.h; sourceTree = "<group>"; };
+		F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSKeyValueInputView.m; sourceTree = "<group>"; };
+		F60D89C71B2B0CE60055DF34 /* MMSDictionaryEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSDictionaryEditorController.h; sourceTree = "<group>"; };
+		F60D89C81B2B0CE60055DF34 /* MMSDictionaryEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSDictionaryEditorController.m; sourceTree = "<group>"; };
+		F60D89CB1B2B0CEF0055DF34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMSDictionaryEditorController.xib; sourceTree = "<group>"; };
+		F667A91A1ACF0F1B008BDED4 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +100,7 @@
 				033FC8BC181010660006F2C6 /* MobileMetricaSample */,
 				033FC8B5181010660006F2C6 /* Frameworks */,
 				033FC8B4181010660006F2C6 /* Products */,
-				F4931352F8968228472F3B97 /* Pods */,
+				8AB880A995AEAB908EABF323 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,12 +128,15 @@
 		033FC8BC181010660006F2C6 /* MobileMetricaSample */ = {
 			isa = PBXGroup;
 			children = (
-				030299AD19FFAD3700751CBA /* MMSEventWithCustomParametersController.h */,
-				030299AC19FFAD3700751CBA /* MMSEventWithCustomParametersController.m */,
 				DC7C0592189821630098F045 /* MMSListItemsProvider.h */,
 				DC7C058D189821630098F045 /* MMSListItemsProvider.m */,
 				DC7C0593189821630098F045 /* MMSListViewController.h */,
 				DC7C058E189821630098F045 /* MMSListViewController.m */,
+				F60D89C71B2B0CE60055DF34 /* MMSDictionaryEditorController.h */,
+				F60D89C81B2B0CE60055DF34 /* MMSDictionaryEditorController.m */,
+				F60D89CA1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib */,
+				F60D89C41B2B0CDB0055DF34 /* MMSKeyValueInputView.h */,
+				F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */,
 				DC7C0590189821630098F045 /* MMSListItem.h */,
 				DC7C0591189821630098F045 /* MMSListItem.m */,
 				DC7C0595189821630098F045 /* MMSRootControllerProvider.h */,
@@ -137,6 +147,7 @@
 				033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */,
 				DC7C0594189821630098F045 /* MMSReportingUtils.h */,
 				DC7C058F189821630098F045 /* MMSReportingUtils.m */,
+				F667A91A1ACF0F1B008BDED4 /* Launch Screen.xib */,
 				033FC8D1181010660006F2C6 /* Images.xcassets */,
 				033FC8BD181010660006F2C6 /* Supporting Files */,
 			);
@@ -146,7 +157,6 @@
 		033FC8BD181010660006F2C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */,
 				7FFF91801814714E00F048DE /* icons */,
 				033FC8BE181010660006F2C6 /* MobileMetricaSample-Info.plist */,
 				033FC8BF181010660006F2C6 /* InfoPlist.strings */,
@@ -170,11 +180,13 @@
 			path = icons;
 			sourceTree = "<group>";
 		};
-		F4931352F8968228472F3B97 /* Pods */ = {
+		8AB880A995AEAB908EABF323 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */,
-				AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */,
+				82EB9AC9D18431B3D2A93ABD /* Pods-MobileMetricaSample.debug.xcconfig */,
+				219F05D17A70150AB225C014 /* Pods-MobileMetricaSample.release.xcconfig */,
+				5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */,
+				0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -240,16 +252,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFF918D1814714E00F048DE /* 58.png in Resources */,
-				030299B119FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib in Resources */,
 				7FFF91891814714E00F048DE /* 29.png in Resources */,
 				7FFF918E1814714E00F048DE /* 72.png in Resources */,
 				7FFF91881814714E00F048DE /* 114.png in Resources */,
+				F667A91B1ACF0F1B008BDED4 /* Launch Screen.xib in Resources */,
 				7FFF918B1814714E00F048DE /* 512.png in Resources */,
 				0305DAFE181190EB00E392ED /* (null) in Resources */,
 				033FC8D2181010660006F2C6 /* Images.xcassets in Resources */,
 				7FFF918C1814714E00F048DE /* 57.png in Resources */,
 				7FFF918A1814714E00F048DE /* 50.png in Resources */,
 				033FC8C1181010660006F2C6 /* InfoPlist.strings in Resources */,
+				F60D89CC1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,32 +309,33 @@
 				DC7C0599189821630098F045 /* MMSReportingUtils.m in Sources */,
 				033FC8F11810169B0006F2C6 /* MMSCrashUtils.mm in Sources */,
 				033FC8C7181010660006F2C6 /* MMSAppDelegate.m in Sources */,
+				F60D89C61B2B0CDB0055DF34 /* MMSKeyValueInputView.m in Sources */,
+				F60D89C91B2B0CE60055DF34 /* MMSDictionaryEditorController.m in Sources */,
 				DC7C0598189821630098F045 /* MMSListViewController.m in Sources */,
 				033FC8C3181010660006F2C6 /* main.m in Sources */,
 				DC7C059A189821630098F045 /* MMSListItem.m in Sources */,
 				DC7C059B189821630098F045 /* MMSRootControllerProvider.m in Sources */,
 				DC7C0597189821630098F045 /* MMSListItemsProvider.m in Sources */,
-				030299AE19FFAD3700751CBA /* MMSEventWithCustomParametersController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		030299AF19FFB9DF00751CBA /* MMSEventWithCustomParametersController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				030299B019FFB9DF00751CBA /* en */,
-			);
-			name = MMSEventWithCustomParametersController.xib;
-			sourceTree = "<group>";
-		};
 		033FC8BF181010660006F2C6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				033FC8C0181010660006F2C6 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F60D89CA1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60D89CB1B2B0CEF0055DF34 /* en */,
+			);
+			name = MMSDictionaryEditorController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -403,7 +417,7 @@
 		};
 		033FC8E9181010660006F2C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A7E05C3CD06F72FA15A080A /* Pods-MobileMetricaSample.debug.xcconfig */;
+			baseConfigurationReference = 5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -423,7 +437,7 @@
 		};
 		033FC8EA181010660006F2C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC9B4061D64CCC6D88A826A9 /* Pods-MobileMetricaSample.release.xcconfig */;
+			baseConfigurationReference = 0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

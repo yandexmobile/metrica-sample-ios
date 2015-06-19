@@ -3,18 +3,19 @@
  *
  * This file is a part of the Yandex.Metrica for Apps.
  *
- * Version for iOS © 2014 YANDEX
+ * Version for iOS © 2015 YANDEX
  *
  * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://legal.yandex.com/metrica_termsofuse/
  */
 
+#import <YandexMobileMetrica/YandexMobileMetrica.h>
 #import "MMSListItemsProvider.h"
 #import "MMSCrashUtils.h"
 #import "MMSReportingUtils.h"
 #import "MMSListItem.h"
 #import "MMSListViewController.h"
-#import "MMSEventWithCustomParametersController.h"
+#import "MMSDictionaryEditorController.h"
 
 @implementation MMSListItemsProvider
 
@@ -24,6 +25,7 @@
     void (^onceBlock)() = ^{
         crashItems =
         @[
+          [self crashEnvironmentEditorItem],
           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
               [MMSCrashUtils deadbeef];
           }
@@ -147,42 +149,76 @@
 {
     static NSArray *reportingItems = nil;
     void (^onceBlock)() = ^{
-        MMSListItemBlock showEventWithCustomParametersController = ^(MMSListViewController *lc) {
-            MMSEventWithCustomParametersController *controller = [[MMSEventWithCustomParametersController alloc] init];
-            controller.navigationItem.title = @"Report Event With Parameters";
-            [lc.navigationController pushViewController:controller animated:YES];
-        };
-        reportingItems =
-        @[
-          [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
-              [MMSReportingUtils reportEventA];
-          }
-                                   title:@"Report event A"],
 
-          [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
-              [MMSReportingUtils reportEventB];
-          }
-                                   title:@"Report event B"],
+        reportingItems = @[
+                           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
+                               [MMSReportingUtils reportEventA];
+                           }
+                                                    title:@"Report event A"],
 
-          [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
-              [MMSReportingUtils reportError];
-          }
-                                   title:@"Report error"],
+                           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
+                               [MMSReportingUtils reportEventB];
+                           }
+                                                    title:@"Report event B"],
 
-          [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
-              [MMSReportingUtils reportException];
-          }
-                                   title:@"Report exception"],
-          [MMSListItem listItemWithBlock:showEventWithCustomParametersController
-                                   title:@"Report Event With Parameters"
-                              disclosing:YES]
-          ];
+                           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
+                               [MMSReportingUtils reportError];
+                           }
+                                                    title:@"Report error"],
+                           
+                           [MMSListItem listItemWithBlock:^(MMSListViewController *lc) {
+                               [MMSReportingUtils reportException];
+                           }
+                                                    title:@"Report exception"],
+                           [self reportEventWithParametersItem]
+                           ];
     };
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, onceBlock);
 
     return [reportingItems copy];
+}
+
+#pragma mark - View Controller items
+
++ (MMSListItem *)reportEventWithParametersItem
+{
+    NSString *action = @"Report Event With Parameters";
+    NSString *title = @"Event with parameters";
+    MMSListItemBlock showEventWithCustomParametersController = ^(MMSListViewController *lc) {
+        MMSDictionaryEditorController *controller = [[MMSDictionaryEditorController alloc] init];
+        controller.dictionaryHandler = ^(NSDictionary *dictionary) {
+            [YMMYandexMetrica reportEvent:@"EVENT-WITH-CUSTOM-PARAMS" parameters:dictionary onFailure:^(NSError *error) {
+                NSLog(@"error: %@", [error localizedDescription]);
+            }];
+        };
+        controller.navigationItem.title = title;
+        controller.actionTitle = action;
+        [lc.navigationController pushViewController:controller animated:YES];
+    };
+    return [MMSListItem listItemWithBlock:showEventWithCustomParametersController title:action];
+}
+
++ (MMSListItem *)crashEnvironmentEditorItem
+{
+    NSString *title = @"Crash Environment";
+    MMSListItemBlock showEventWithCustomParametersController = ^(MMSListViewController *lc) {
+        MMSDictionaryEditorController *environmentEditor = [[MMSDictionaryEditorController alloc] init];
+        environmentEditor.emptyValuesAllowed = YES;
+        environmentEditor.dictionaryHandler = ^(NSDictionary *dictionary) {
+            [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
+                if (value.length == 0) {
+                    value = nil;
+                }
+                [YMMYandexMetrica setEnvironmentValue:value forKey:key];
+            }];
+        };
+        environmentEditor.navigationItem.title = @"Crash Environment";
+        environmentEditor.actionTitle = @"Set Crash Environment";
+        [lc.navigationController pushViewController:environmentEditor animated:YES];
+    };
+    return [MMSListItem listItemWithBlock:showEventWithCustomParametersController title:title];
 }
 
 @end
