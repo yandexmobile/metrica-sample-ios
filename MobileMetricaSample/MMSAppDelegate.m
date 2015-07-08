@@ -19,7 +19,7 @@
 + (void)initialize
 {
     if ([self class] == [MMSAppDelegate class]) {
-        [YMMYandexMetrica startWithAPIKey:@"7633"];
+        [YMMYandexMetrica startWithAPIKey:@"1111"];
         //manual log level setting for whole library
         //[YMMYandexMetrica setLogLevel:ASL_LEVEL_DEBUG];
     }
