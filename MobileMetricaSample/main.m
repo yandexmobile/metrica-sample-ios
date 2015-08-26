@@ -1,7 +1,7 @@
 /*
  *  main.m
  *
- * This file is a part of the Yandex.Metrica for Apps.
+ * This file is a part of the AppMetrica
  *
  * Version for iOS © 2013 YANDEX
  *

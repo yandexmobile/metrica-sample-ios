@@ -1,7 +1,7 @@
 /*
  *  MMSReportingUtils.m
  *
- * This file is a part of the Yandex.Metrica for Apps.
+ * This file is a part of the AppMetrica
  *
  * Version for iOS © 2015 YANDEX
  *
@@ -82,11 +82,6 @@
     @finally {
         testException = nil;
     }
-}
-
-+ (void)forceSendEvents
-{
-    [YMMYandexMetrica sendEventsBuffer];
 }
 
 @end
