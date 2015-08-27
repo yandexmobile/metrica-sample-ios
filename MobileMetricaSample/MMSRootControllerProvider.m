@@ -1,7 +1,7 @@
 /*
  *  MMSRootControllerGenerator.m
  *
- * This file is a part of the Yandex.Metrica for Apps.
+ * This file is a part of the AppMetrica
  *
  * Version for iOS © 2015 YANDEX
  *
@@ -30,7 +30,7 @@ static CGFloat const kMMSNavBarBrightness = .75f;
 {
     MMSListViewController *controller = [[MMSListViewController alloc] initWithStyle:UITableViewStylePlain];
     controller.availableItems = [[self class] rootControllerStructure];
-    controller.navigationItem.title = @"Yandex.Metrica Sample";
+    controller.navigationItem.title = @"AppMetrica Sample";
 
     return controller;
 }

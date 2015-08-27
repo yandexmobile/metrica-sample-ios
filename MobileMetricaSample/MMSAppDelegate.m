@@ -1,7 +1,7 @@
 /*
  *  MMSAppDelegate.m
  *
- * This file is a part of the Yandex.Metrica for Apps.
+ * This file is a part of the AppMetrica
  *
  * Version for iOS © 2015 YANDEX
  *
@@ -12,16 +12,18 @@
 #import <YandexMobileMetrica/YandexMobileMetrica.h>
 #import "MMSAppDelegate.h"
 #import "MMSRootControllerProvider.h"
-#import "asl.h"
 
 @implementation MMSAppDelegate
 
 + (void)initialize
 {
     if ([self class] == [MMSAppDelegate class]) {
-        [YMMYandexMetrica startWithAPIKey:@"1111"];
-        //manual log level setting for whole library
-        //[YMMYandexMetrica setLogLevel:ASL_LEVEL_DEBUG];
+        /* Replace API_KEY with your unique API key. Please, read official documentation how to obtain one:
+         https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/ios-quickstart-docpage/
+         */
+        [YMMYandexMetrica activateWithApiKey:@"API_KEY"];
+        //manual log setting for whole library
+        //[YMMYandexMetrica setLoggingEnabled:YES];
     }
 }
 

@@ -6,5 +6,5 @@ platform :ios, :deployment_target => '6.0'
 
 target :MobileMetricaSample do
     xcodeproj 'MobileMetricaSample.xcodeproj' 
-    pod 'YandexMobileMetrica', '1.8.5'
+    pod 'YandexMobileMetrica', '2.0.0'
 end
