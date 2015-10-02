@@ -23,6 +23,7 @@ static CGFloat const kMMSRowHeight = 60.f;
     [super viewDidLoad];
 
     self.tableView.rowHeight = kMMSRowHeight;
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
