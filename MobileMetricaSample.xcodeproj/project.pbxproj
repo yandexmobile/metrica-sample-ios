@@ -31,14 +31,14 @@
 		F60D89C61B2B0CDB0055DF34 /* MMSKeyValueInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */; };
 		F60D89C91B2B0CE60055DF34 /* MMSDictionaryEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C81B2B0CE60055DF34 /* MMSDictionaryEditorController.m */; };
 		F60D89CC1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D89CA1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib */; };
-		F63865A91BBEA67C00977D99 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63865A81BBEA67C00977D99 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		F63865A91BBEA67C00977D99 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63865A81BBEA67C00977D99 /* NotificationCenter.framework */; };
 		F63865AD1BBEA67C00977D99 /* MMSTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63865AC1BBEA67C00977D99 /* MMSTodayViewController.m */; };
 		F63865B01BBEA67C00977D99 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63865AE1BBEA67C00977D99 /* MainInterface.storyboard */; };
 		F63865B41BBEA67C00977D99 /* MobileMetricaSampleToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F63865A71BBEA67C00977D99 /* MobileMetricaSampleToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F63865B91BBEB47300977D99 /* MMSListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058E189821630098F045 /* MMSListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		F63865BA1BBEB47A00977D99 /* MMSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0591189821630098F045 /* MMSListItem.m */; settings = {ASSET_TAGS = (); }; };
-		F63865BB1BBEB47F00977D99 /* MMSCrashUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */; settings = {ASSET_TAGS = (); }; };
-		F63865BC1BBEB48200977D99 /* MMSReportingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058F189821630098F045 /* MMSReportingUtils.m */; settings = {ASSET_TAGS = (); }; };
+		F63865B91BBEB47300977D99 /* MMSListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058E189821630098F045 /* MMSListViewController.m */; };
+		F63865BA1BBEB47A00977D99 /* MMSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0591189821630098F045 /* MMSListItem.m */; };
+		F63865BB1BBEB47F00977D99 /* MMSCrashUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */; };
+		F63865BC1BBEB48200977D99 /* MMSReportingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058F189821630098F045 /* MMSReportingUtils.m */; };
 		F667A91B1ACF0F1B008BDED4 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F667A91A1ACF0F1B008BDED4 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
@@ -271,6 +271,7 @@
 				033FC8B1181010660006F2C6 /* Resources */,
 				5E4B80CCF5E045019C8F28F2 /* Copy Pods Resources */,
 				F63865B81BBEA67D00977D99 /* Embed App Extensions */,
+				DFB1815704248D23FE71EB98 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +292,7 @@
 				F63865A41BBEA67C00977D99 /* Frameworks */,
 				F63865A51BBEA67C00977D99 /* Resources */,
 				0E0B195506F54551ACA7B9C6 /* Copy Pods Resources */,
+				385884FD6FF587F6B8C89CE3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +401,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		385884FD6FF587F6B8C89CE3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5E4B80CCF5E045019C8F28F2 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +429,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB1815704248D23FE71EB98 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFB4EFEC34E34B899D23F0E9 /* Check Pods Manifest.lock */ = {
