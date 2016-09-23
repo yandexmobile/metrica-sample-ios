@@ -1,21 +1,33 @@
-There is a sample application that demonstrates basic usage of Yandex.Metrica for Apps.
+## Yandex AppMetrica Sample
 
-EULA could be found at:
-http://legal.yandex.com/metrica_termsofuse/
+This is a sample application that demonstrates basic usage of Yandex AppMetrica.
 
-Documentation could be found at:
-http://api.yandex.com/metrica-mobile-sdk/
+## Documentation
+Documentation could be found at [AppMetrica official site] [DOCUMENTATION]
 
-Quick start
+## Quick start
 
 1. Install CocoaPods (http://cocoapods.org/) to manage project dependencies, if you haven't done it yet.
 
-2. Clone repository:
+2. Clone the repository:
+
+    ```bash
     git clone https://github.com/yandexmobile/metrica-sample-ios
+    ```
 
-3.  Go to cloned repository and install dependencies:
+3.  Go to the cloned repository and install dependencies:
+
+    ```bash
     pod install
+    ```
 
-4. Open project workspace MobileMetricaSample.xcworkspace.
+4. Open the project workspace MobileMetricaSample.xcworkspace.
 
-5. Build and run MobileMetricaSample target.
+5. Build and run the MobileMetricaSample target.
+
+## License
+
+License agreement is available at [EULA site] [LICENSE]
+
+[LICENSE]: https://yandex.com/legal/metrica_termsofuse/ "Yandex AppMetrica agreement"
+[DOCUMENTATION]: https://tech.yandex.com/metrica-mobile-sdk/ "Yandex AppMetrica for Apps documentation"
