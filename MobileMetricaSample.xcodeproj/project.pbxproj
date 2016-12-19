@@ -14,7 +14,7 @@
 		033FC8C7181010660006F2C6 /* MMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033FC8C6181010660006F2C6 /* MMSAppDelegate.m */; };
 		033FC8D2181010660006F2C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033FC8D1181010660006F2C6 /* Images.xcassets */; };
 		033FC8F11810169B0006F2C6 /* MMSCrashUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */; };
-		57B0D74733BB73473C2DCBEF /* libPods-MobileMetricaSampleToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F20F0E4F060F872831A5E2 /* libPods-MobileMetricaSampleToday.a */; };
+		66C18123177CA4CD91D1CDEE /* libPods-MobileMetricaSampleToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F145ABF4A0060AC7EC8E9CD8 /* libPods-MobileMetricaSampleToday.a */; };
 		7FFF91881814714E00F048DE /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91811814714E00F048DE /* 114.png */; };
 		7FFF91891814714E00F048DE /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91821814714E00F048DE /* 29.png */; };
 		7FFF918A1814714E00F048DE /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91831814714E00F048DE /* 50.png */; };
@@ -22,12 +22,12 @@
 		7FFF918C1814714E00F048DE /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91851814714E00F048DE /* 57.png */; };
 		7FFF918D1814714E00F048DE /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91861814714E00F048DE /* 58.png */; };
 		7FFF918E1814714E00F048DE /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF91871814714E00F048DE /* 72.png */; };
-		8A28F1F1B3934E389C66C662 /* libPods-MobileMetricaSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */; };
 		DC7C0597189821630098F045 /* MMSListItemsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058D189821630098F045 /* MMSListItemsProvider.m */; };
 		DC7C0598189821630098F045 /* MMSListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058E189821630098F045 /* MMSListViewController.m */; };
 		DC7C0599189821630098F045 /* MMSReportingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C058F189821630098F045 /* MMSReportingUtils.m */; };
 		DC7C059A189821630098F045 /* MMSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0591189821630098F045 /* MMSListItem.m */; };
 		DC7C059B189821630098F045 /* MMSRootControllerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C0596189821630098F045 /* MMSRootControllerProvider.m */; };
+		E8A1E1790028E712B4FFDD5B /* libPods-MobileMetricaSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9D65C5AC6687450D98045E /* libPods-MobileMetricaSample.a */; };
 		F60D89C61B2B0CDB0055DF34 /* MMSKeyValueInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */; };
 		F60D89C91B2B0CE60055DF34 /* MMSDictionaryEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D89C81B2B0CE60055DF34 /* MMSDictionaryEditorController.m */; };
 		F60D89CC1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D89CA1B2B0CEF0055DF34 /* MMSDictionaryEditorController.xib */; };
@@ -82,11 +82,9 @@
 		033FC8EF1810169B0006F2C6 /* MMSCrashUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMSCrashUtils.mm; sourceTree = "<group>"; };
 		033FC8F01810169B0006F2C6 /* MMSCrashUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSCrashUtils.h; sourceTree = "<group>"; };
 		03871AE918B2692B00CE9E18 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
-		219F05D17A70150AB225C014 /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
-		26CCEE4076582407041652A0 /* Pods-MobileMetricaSampleToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSampleToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday.release.xcconfig"; sourceTree = "<group>"; };
-		4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
+		0D9D65C5AC6687450D98045E /* libPods-MobileMetricaSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6180E5BCCB8DAE93CC067DCF /* Pods-MobileMetricaSampleToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSampleToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday.release.xcconfig"; sourceTree = "<group>"; };
+		743DCDE26CC4A67215F12A8D /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7FFF91811814714E00F048DE /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		7FFF91821814714E00F048DE /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
 		7FFF91831814714E00F048DE /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
@@ -94,8 +92,8 @@
 		7FFF91851814714E00F048DE /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		7FFF91861814714E00F048DE /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		7FFF91871814714E00F048DE /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
-		82EB9AC9D18431B3D2A93ABD /* Pods-MobileMetricaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.debug.xcconfig"; sourceTree = "<group>"; };
-		91400BBDDBACCFC827998374 /* Pods-MobileMetricaSampleToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSampleToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday.debug.xcconfig"; sourceTree = "<group>"; };
+		A69D550FE7460211B4A03D8E /* Pods-MobileMetricaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample.release.xcconfig"; sourceTree = "<group>"; };
+		D23CACBEA75B94B7A19A73E7 /* Pods-MobileMetricaSampleToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileMetricaSampleToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7C058D189821630098F045 /* MMSListItemsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListItemsProvider.m; sourceTree = "<group>"; };
 		DC7C058E189821630098F045 /* MMSListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSListViewController.m; sourceTree = "<group>"; };
 		DC7C058F189821630098F045 /* MMSReportingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSReportingUtils.m; sourceTree = "<group>"; };
@@ -106,6 +104,7 @@
 		DC7C0594189821630098F045 /* MMSReportingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSReportingUtils.h; sourceTree = "<group>"; };
 		DC7C0595189821630098F045 /* MMSRootControllerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSRootControllerProvider.h; sourceTree = "<group>"; };
 		DC7C0596189821630098F045 /* MMSRootControllerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSRootControllerProvider.m; sourceTree = "<group>"; };
+		F145ABF4A0060AC7EC8E9CD8 /* libPods-MobileMetricaSampleToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSampleToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60D89C41B2B0CDB0055DF34 /* MMSKeyValueInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSKeyValueInputView.h; sourceTree = "<group>"; };
 		F60D89C51B2B0CDB0055DF34 /* MMSKeyValueInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSKeyValueInputView.m; sourceTree = "<group>"; };
 		F60D89C71B2B0CE60055DF34 /* MMSDictionaryEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSDictionaryEditorController.h; sourceTree = "<group>"; };
@@ -118,7 +117,6 @@
 		F63865AF1BBEA67C00977D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F63865B11BBEA67C00977D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F667A91A1ACF0F1B008BDED4 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		F9F20F0E4F060F872831A5E2 /* libPods-MobileMetricaSampleToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileMetricaSampleToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,7 @@
 			files = (
 				033FC8BB181010660006F2C6 /* UIKit.framework in Frameworks */,
 				033FC8B7181010660006F2C6 /* Foundation.framework in Frameworks */,
-				8A28F1F1B3934E389C66C662 /* libPods-MobileMetricaSample.a in Frameworks */,
+				E8A1E1790028E712B4FFDD5B /* libPods-MobileMetricaSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F63865A91BBEA67C00977D99 /* NotificationCenter.framework in Frameworks */,
-				57B0D74733BB73473C2DCBEF /* libPods-MobileMetricaSampleToday.a in Frameworks */,
+				66C18123177CA4CD91D1CDEE /* libPods-MobileMetricaSampleToday.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +149,7 @@
 				F63865AA1BBEA67C00977D99 /* MobileMetricaSampleToday */,
 				033FC8B5181010660006F2C6 /* Frameworks */,
 				033FC8B4181010660006F2C6 /* Products */,
-				8AB880A995AEAB908EABF323 /* Pods */,
+				901D8179206A0CF388558F68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,9 +170,9 @@
 				033FC8B8181010660006F2C6 /* CoreGraphics.framework */,
 				033FC8BA181010660006F2C6 /* UIKit.framework */,
 				033FC8D8181010660006F2C6 /* XCTest.framework */,
-				4B992F6C8B8F413DB32E0754 /* libPods-MobileMetricaSample.a */,
 				F63865A81BBEA67C00977D99 /* NotificationCenter.framework */,
-				F9F20F0E4F060F872831A5E2 /* libPods-MobileMetricaSampleToday.a */,
+				0D9D65C5AC6687450D98045E /* libPods-MobileMetricaSample.a */,
+				F145ABF4A0060AC7EC8E9CD8 /* libPods-MobileMetricaSampleToday.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,15 +232,13 @@
 			path = icons;
 			sourceTree = "<group>";
 		};
-		8AB880A995AEAB908EABF323 /* Pods */ = {
+		901D8179206A0CF388558F68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82EB9AC9D18431B3D2A93ABD /* Pods-MobileMetricaSample.debug.xcconfig */,
-				219F05D17A70150AB225C014 /* Pods-MobileMetricaSample.release.xcconfig */,
-				5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */,
-				0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */,
-				91400BBDDBACCFC827998374 /* Pods-MobileMetricaSampleToday.debug.xcconfig */,
-				26CCEE4076582407041652A0 /* Pods-MobileMetricaSampleToday.release.xcconfig */,
+				743DCDE26CC4A67215F12A8D /* Pods-MobileMetricaSample.debug.xcconfig */,
+				A69D550FE7460211B4A03D8E /* Pods-MobileMetricaSample.release.xcconfig */,
+				D23CACBEA75B94B7A19A73E7 /* Pods-MobileMetricaSampleToday.debug.xcconfig */,
+				6180E5BCCB8DAE93CC067DCF /* Pods-MobileMetricaSampleToday.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -265,13 +261,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 033FC8E8181010660006F2C6 /* Build configuration list for PBXNativeTarget "MobileMetricaSample" */;
 			buildPhases = (
-				DFB4EFEC34E34B899D23F0E9 /* Check Pods Manifest.lock */,
+				AD59CBF17EE11890CB7E4891 /* [CP] Check Pods Manifest.lock */,
 				033FC8AF181010660006F2C6 /* Sources */,
 				033FC8B0181010660006F2C6 /* Frameworks */,
 				033FC8B1181010660006F2C6 /* Resources */,
-				5E4B80CCF5E045019C8F28F2 /* Copy Pods Resources */,
 				F63865B81BBEA67D00977D99 /* Embed App Extensions */,
-				DFB1815704248D23FE71EB98 /* Embed Pods Frameworks */,
+				0CBA6F853602848BE5FA3B5A /* [CP] Embed Pods Frameworks */,
+				FE75E5107F57154AB236D103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,12 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F63865B51BBEA67D00977D99 /* Build configuration list for PBXNativeTarget "MobileMetricaSampleToday" */;
 			buildPhases = (
-				241CA05FD87456EFA4E60C40 /* Check Pods Manifest.lock */,
+				C21133F8739D1E2A6C07EB80 /* [CP] Check Pods Manifest.lock */,
 				F63865A31BBEA67C00977D99 /* Sources */,
 				F63865A41BBEA67C00977D99 /* Frameworks */,
 				F63865A51BBEA67C00977D99 /* Resources */,
-				0E0B195506F54551ACA7B9C6 /* Copy Pods Resources */,
-				385884FD6FF587F6B8C89CE3 /* Embed Pods Frameworks */,
+				8FFA6EECCBCEBE311651FF4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,74 +366,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E0B195506F54551ACA7B9C6 /* Copy Pods Resources */ = {
+		0CBA6F853602848BE5FA3B5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		241CA05FD87456EFA4E60C40 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		385884FD6FF587F6B8C89CE3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E4B80CCF5E045019C8F28F2 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFB1815704248D23FE71EB98 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,19 +381,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFB4EFEC34E34B899D23F0E9 /* Check Pods Manifest.lock */ = {
+		8FFA6EECCBCEBE311651FF4C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSampleToday/Pods-MobileMetricaSampleToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD59CBF17EE11890CB7E4891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C21133F8739D1E2A6C07EB80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE75E5107F57154AB236D103 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileMetricaSample/Pods-MobileMetricaSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -607,7 +587,7 @@
 		};
 		033FC8E9181010660006F2C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5129E1FE683EAC79F498404E /* Pods-MobileMetricaSample.debug.xcconfig */;
+			baseConfigurationReference = 743DCDE26CC4A67215F12A8D /* Pods-MobileMetricaSample.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -627,7 +607,7 @@
 		};
 		033FC8EA181010660006F2C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0818482352EDD4B8E52422EA /* Pods-MobileMetricaSample.release.xcconfig */;
+			baseConfigurationReference = A69D550FE7460211B4A03D8E /* Pods-MobileMetricaSample.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -647,7 +627,7 @@
 		};
 		F63865B61BBEA67D00977D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91400BBDDBACCFC827998374 /* Pods-MobileMetricaSampleToday.debug.xcconfig */;
+			baseConfigurationReference = D23CACBEA75B94B7A19A73E7 /* Pods-MobileMetricaSampleToday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -670,7 +650,7 @@
 		};
 		F63865B71BBEA67D00977D99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26CCEE4076582407041652A0 /* Pods-MobileMetricaSampleToday.release.xcconfig */;
+			baseConfigurationReference = 6180E5BCCB8DAE93CC067DCF /* Pods-MobileMetricaSampleToday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
