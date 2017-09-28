@@ -3,7 +3,7 @@
 This is a sample application that demonstrates basic usage of Yandex AppMetrica.
 
 ## Documentation
-Documentation could be found at [AppMetrica official site] [DOCUMENTATION]
+Documentation could be found at [AppMetrica official site][DOCUMENTATION]
 
 ## Quick start
 
@@ -27,7 +27,7 @@ Documentation could be found at [AppMetrica official site] [DOCUMENTATION]
 
 ## License
 
-License agreement is available at [EULA site] [LICENSE]
+License agreement is available at [EULA site][LICENSE]
 
 [LICENSE]: https://yandex.com/legal/metrica_termsofuse/ "Yandex AppMetrica agreement"
 [DOCUMENTATION]: https://tech.yandex.com/metrica-mobile-sdk/ "Yandex AppMetrica for Apps documentation"
