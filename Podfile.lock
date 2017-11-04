@@ -1,14 +1,14 @@
 PODS:
-  - YandexMobileMetrica (2.9.1):
-    - YandexMobileMetrica/Static (= 2.9.1)
-  - YandexMobileMetrica/Static (2.9.1)
+  - YandexMobileMetrica (2.9.4):
+    - YandexMobileMetrica/Static (= 2.9.4)
+  - YandexMobileMetrica/Static (2.9.4)
 
 DEPENDENCIES:
-  - YandexMobileMetrica (= 2.9.1)
+  - YandexMobileMetrica (= 2.9.4)
 
 SPEC CHECKSUMS:
-  YandexMobileMetrica: 399a7a92d5408dd2bb49370f5f78736cb60b9532
+  YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: 0d5c448ea09c72fc602cc64b3b29018737bfb743
+PODFILE CHECKSUM: 7bb579f7223961c14e16a6b4ee26369baf84ce2c
 
 COCOAPODS: 1.1.1
