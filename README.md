@@ -29,5 +29,5 @@ Documentation could be found at [AppMetrica official site][DOCUMENTATION]
 
 License agreement is available at [EULA site][LICENSE]
 
-[LICENSE]: https://yandex.com/legal/metrica_termsofuse/ "Yandex AppMetrica agreement"
-[DOCUMENTATION]: https://tech.yandex.com/metrica-mobile-sdk/ "Yandex AppMetrica for Apps documentation"
+[LICENSE]: https://yandex.com/legal/appmetrica_sdk_agreement/ "Yandex AppMetrica agreement"
+[DOCUMENTATION]: https://tech.yandex.com/metrica-mobile-sdk/ "Yandex AppMetrica documentation"
